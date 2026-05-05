@@ -1,5 +1,111 @@
 {
-    "settings": {},
-    "navigation": [],
-    "pages": {}
+  "settings": {
+    "font_size_small": "13px",
+    "highlight_pink": "#FFF0F6",
+    "shadow_md": "0 4px 12px rgba(0,0,0,0.1)",
+    "btn_text": "#ffffff",
+    "bg_tertiary": "#f2f1ef",
+    "border_radius_sm": "4px",
+    "font_heading": "Georgia, Times New Roman, serif",
+    "border_color": "#e8e6e1",
+    "font_mono": "Courier New, monospace",
+    "quote_text": "#1A5FB4",
+    "quote_border_color": "#3794FF",
+    "highlight_blue": "#EBF2FF",
+    "bg_secondary": "#ffffff",
+    "line_height_heading": "1.15",
+    "font_size_body": "15px",
+    "highlight_yellow": "#FFF9C4",
+    "btn_secondary_text": "#1a1916",
+    "font_size_h4": "18px",
+    "border_radius_lg": "12px",
+    "font_size_h2": "28px",
+    "btn_bg": "#1a1916",
+    "accent_color": "#3794FF",
+    "max_width": "860px",
+    "border_color_strong": "#ccc9c2",
+    "text_tertiary": "#a09e9b",
+    "line_height_body": "1.7",
+    "highlight_green": "#EAFAF1",
+    "nav_bg": "rgba(249,249,248,0.95)",
+    "border_radius_md": "8px",
+    "font_size_h1": "clamp(36px, 5vw, 56px)",
+    "font_size_h3": "22px",
+    "border_radius_btn": "8px",
+    "btn_secondary_bg": "#f2f1ef",
+    "bg_primary": "#f9f9f8",
+    "spacing_section": "4rem",
+    "font_body": "-apple-system, Helvetica Neue, Arial, sans-serif",
+    "text_primary": "#1a1916",
+    "text_secondary": "#6b6a67",
+    "quote_bg": "#EBF2FF",
+    "shadow_sm": "0 1px 3px rgba(0,0,0,0.08)",
+    "highlight_orange": "#FFF0E6",
+    "btn_hover_opacity": "0.85",
+    "nav_border": "#e8e6e1"
+  },
+  "navigation": [
+    {
+      "id": "logo_main",
+      "label": "Maria Artemeva",
+      "url": "/",
+      "order": 1,
+      "visible": true,
+      "type": "logo"
+    },
+    {
+      "id": "page_home",
+      "label": "Home",
+      "url": "/",
+      "order": 2,
+      "visible": true,
+      "type": "page"
+    },
+    {
+      "id": "page_about",
+      "label": "About",
+      "url": "/about",
+      "order": 3,
+      "visible": true,
+      "type": "page"
+    },
+    {
+      "id": "social_linkedin",
+      "label": "LinkedIn",
+      "url": "linkedin.com/in/cmo-bio",
+      "order": 5,
+      "visible": true,
+      "type": "social"
+    }
+  ],
+  "pages": {
+    "main": {
+      "blocks": [
+        {
+          "type": "heading_1",
+          "text": "<strong>Marketing systems that lower CAC,</strong><em><strong>grow retention,</strong></em><strong> and scale.</strong>"
+        },
+        {
+          "type": "paragraph",
+          "text": "I help startups and scale-ups build the marketing engine they need to grow — connecting acquisition, CRM, retention, analytics, and creative execution into one practical system grounded in real customer data."
+        }
+      ]
+    },
+    "about": {
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "I'm Maria Artemeva — a CMO and marketing consultant with 20+ years of experience across retail, food delivery, SaaS, and EdTech. I've built marketing teams and systems at companies ranging from #1 market leaders to early-stage US startups."
+        },
+        {
+          "type": "paragraph",
+          "text": "My focus is practical: full-funnel marketing systems that lower CAC, grow CRM revenue, and improve retention — all grounded in real customer data rather than assumptions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Based in Portugal. Available for fractional CMO roles and strategic advisory engagements globally."
+        }
+      ]
+    }
+  }
 }
