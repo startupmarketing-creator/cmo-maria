@@ -3,10 +3,21 @@ const fs = require('fs');
 
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
+// Database IDs (used to discover their data sources)
 const SETTINGS_DB = '357ca93d844180c3a965db01e49db981';
 const NAV_DB      = '357ca93d84418097a8a5d51b59771f55';
 const PAGE_MAIN   = '357ca93d84418080b90ec9d1bb0a596f';
 const PAGE_ABOUT  = '357ca93d84418082ae87dc96bb3d7dd5';
+
+// Resolve a database to its first data source ID.
+// Notion 2025-09-03 API: databases now contain one or more data sources.
+async function getDataSourceId(databaseId) {
+  const db = await notion.databases.retrieve({ database_id: databaseId });
+  if (!db.data_sources || db.data_sources.length === 0) {
+    throw new Error('No data sources found for database ' + databaseId);
+  }
+  return db.data_sources[0].id;
+}
 
 // Extract plain text from a property (title or rich_text)
 function getText(prop) {
@@ -72,12 +83,15 @@ async function fetchBlocks(pageId) {
   return blocks;
 }
 
-// Fetch all rows from a database (handles pagination)
-async function fetchDb(dbId) {
+// Fetch all rows from a data source (handles pagination, new 2025-09-03 API)
+async function fetchDataSource(dataSourceId) {
   const rows = [];
   let cursor;
   do {
-    const res = await notion.databases.query({ database_id: dbId, start_cursor: cursor });
+    const res = await notion.dataSources.query({
+      data_source_id: dataSourceId,
+      start_cursor: cursor
+    });
     rows.push(...res.results);
     cursor = res.has_more ? res.next_cursor : undefined;
   } while (cursor);
@@ -85,7 +99,8 @@ async function fetchDb(dbId) {
 }
 
 async function buildSettings() {
-  const rows = await fetchDb(SETTINGS_DB);
+  const dsId = await getDataSourceId(SETTINGS_DB);
+  const rows = await fetchDataSource(dsId);
   const settings = {};
   for (const row of rows) {
     const key = getText(row.properties.Key);
@@ -96,7 +111,8 @@ async function buildSettings() {
 }
 
 async function buildNavigation() {
-  const rows = await fetchDb(NAV_DB);
+  const dsId = await getDataSourceId(NAV_DB);
+  const rows = await fetchDataSource(dsId);
   const items = rows.map(row => {
     const p = row.properties;
     return {
