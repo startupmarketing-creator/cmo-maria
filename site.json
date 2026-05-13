@@ -1,48 +1,48 @@
 {
   "settings": {
-    "font_size_small": "13px",
-    "highlight_pink": "#FFF0F6",
-    "shadow_md": "0 4px 12px rgba(0,0,0,0.1)",
-    "btn_text": "#ffffff",
-    "bg_tertiary": "#F0EBE3",
-    "border_radius_sm": "4px",
-    "font_heading": "“Tiempos Text”, “Freight Text Pro”, Georgia, “Times New Roman”, serif",
-    "border_color": "#e8e6e1",
-    "font_mono": "Courier New, monospace",
-    "quote_text": "#1a1916",
-    "quote_border_color": "#CC785C",
-    "highlight_blue": "#EDE4D8",
-    "bg_secondary": "#ffffff",
-    "line_height_heading": "1.15",
-    "font_size_body": "15px",
-    "highlight_yellow": "#FFF9C4",
-    "btn_secondary_text": "#1a1916",
-    "font_size_h4": "18px",
-    "border_radius_lg": "12px",
-    "font_size_h2": "28px",
-    "btn_bg": "#1a1916",
-    "accent_color": "#CC785C",
-    "max_width": "860px",
-    "border_color_strong": "#ccc9c2",
-    "text_tertiary": "#a09e9b",
-    "line_height_body": "1.7",
-    "highlight_green": "#EAFAF1",
-    "nav_bg": "rgba(250,247,242,0.95)",
-    "border_radius_md": "8px",
-    "font_size_h1": "clamp(36px, 5vw, 56px)",
-    "font_size_h3": "22px",
-    "border_radius_btn": "8px",
-    "btn_secondary_bg": "#F0EBE3",
-    "bg_primary": "#FAF7F2",
     "spacing_section": "4rem",
-    "font_body": "“Söhne”, ui-sans-serif, -apple-system, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif",
-    "text_primary": "#1a1916",
-    "text_secondary": "#6b6a67",
-    "quote_bg": "#FBF7EE",
+    "max_width": "860px",
+    "shadow_md": "0 4px 12px rgba(0,0,0,0.1)",
     "shadow_sm": "0 1px 3px rgba(0,0,0,0.08)",
-    "highlight_orange": "#FFF0E6",
+    "nav_border": "#e8e6e1",
+    "nav_bg": "rgba(250,247,242,0.95)",
+    "btn_secondary_text": "#1a1916",
+    "btn_secondary_bg": "#F0EBE3",
     "btn_hover_opacity": "0.85",
-    "nav_border": "#e8e6e1"
+    "btn_text": "#ffffff",
+    "btn_bg": "#1a1916",
+    "highlight_pink": "#FFF0F6",
+    "highlight_orange": "#FFF0E6",
+    "highlight_green": "#EAFAF1",
+    "highlight_blue": "#EDE4D8",
+    "highlight_yellow": "#FFF9C4",
+    "quote_text": "#1a1916",
+    "quote_bg": "#FBF7EE",
+    "quote_border_color": "#CC785C",
+    "line_height_heading": "1.15",
+    "line_height_body": "1.7",
+    "font_size_small": "13px",
+    "font_size_body": "15px",
+    "font_size_h4": "18px",
+    "font_size_h3": "22px",
+    "font_size_h2": "28px",
+    "font_size_h1": "clamp(36px, 5vw, 56px)",
+    "border_radius_btn": "8px",
+    "border_radius_lg": "12px",
+    "border_radius_md": "8px",
+    "border_radius_sm": "4px",
+    "font_mono": "Courier New, monospace",
+    "font_heading": "“Tiempos Text”, “Freight Text Pro”, Georgia, “Times New Roman”, serif",
+    "font_body": "“Söhne”, ui-sans-serif, -apple-system, BlinkMacSystemFont, “Segoe UI”, Helvetica, Arial, sans-serif",
+    "border_color_strong": "#ccc9c2",
+    "border_color": "#e8e6e1",
+    "text_tertiary": "#a09e9b",
+    "text_secondary": "#6b6a67",
+    "text_primary": "#1a1916",
+    "bg_tertiary": "#F0EBE3",
+    "bg_secondary": "#ffffff",
+    "bg_primary": "#FAF7F2",
+    "accent_color": "#CC785C"
   },
   "navigation": [
     {
@@ -94,20 +94,235 @@
     "about": {
       "blocks": [
         {
-          "type": "paragraph",
-          "text": "I'm Maria Artemeva — a CMO and marketing consultant with 20+ years of experience across retail, food delivery, SaaS, and EdTech. "
+          "type": "heading_1",
+          "text": "Maria Artemieva"
         },
         {
           "type": "paragraph",
-          "text": "I've built marketing teams and systems at companies ranging from #1 market leaders to early-stage US startups."
+          "text": "<strong>Head of CRM &amp; Lifecycle Marketing</strong>\nBuilding retention into the #1 revenue channel for marketplaces, foodtech and e-commerce"
         },
         {
           "type": "paragraph",
-          "text": "My focus is practical: full-funnel marketing systems that lower CAC, grow CRM revenue, and improve retention — all grounded in real customer data rather than assumptions."
+          "text": "Porto, Portugal → Remote (EU / UK / US East) → maria@cmo.bio → linkedin.com/in/cmo-bio → cmo.bio"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Summary"
         },
         {
           "type": "paragraph",
-          "text": "Based in Portugal. Available for fractional CMO roles and strategic advisory engagements globally."
+          "text": "Senior CRM leader with 15 years building retention into the primary revenue channel for marketplaces, foodtech and retail. Grew CRM share of revenue from 11% to 74% in 11 months at KupiVip. Delivered +5% incremental revenue on a mature product at Yandex Eats with a CRM function built from zero. Led teams up to 18 people across strategy, lifecycle, analytics and content. Hands-on with Bloomreach Engagement (Exponea), Mindbox, customer data architecture, A/B testing at scale."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Selected Highlights"
+        },
+        {
+          "type": "paragraph",
+          "text": "🟢 <strong>Yandex Eats</strong> → built CRM function from 3 to 18 people, delivered +5% incremental revenue on a mature foodtech product within one quarter\n🟢 <strong>KupiVip</strong> → grew CRM share of revenue from 11% to 74% in 11 months, a key driver of the first positive EBITDA in company history\n🟢 <strong>Regional marketplace (2025)</strong> → quadrupled email revenue per delivered message and brought popup checkout rate from 12% to 45% in 8 months with less than 1 FTE on CRM\n🟢 <strong>Out of Cloud (CRM agency)</strong> → acted as Head of CRM for a 30+ client portfolio (Vprok/X5, Haier, JBL, Vita), grew the strategist team from 1 to 10\n🟢 <strong>Svyaznoy (3,500 stores)</strong> → designed the decile analysis methodology now used across all my retail and digital projects → +5% incremental revenue in a 15-store pilot"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Experience"
+        },
+        {
+          "type": "heading_3",
+          "text": "CMO, 63pokupki → Regional E-commerce Marketplace"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Aug 2025 – Present</strong> → Russia-based regional marketplace with a group-buy model and no paid acquisition channel by design → CRM and owned channels are the entire growth engine"
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>CRM channel reform (email + popup, stack: Mindbox).</strong> Email reputation low → good in 8 months. Revenue per delivered email 1.8 RUB → 7 RUB (4x). Email channel revenue 1.5M RUB/month → 7.2M RUB/month (5x). Popup cart buyout rate 12% → 45% (3.75x), popup channel revenue 7M RUB → 12M RUB/month. Delivered with less than 1 FTE on CRM (part-time freelancer plus shared marketer time)."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Social channels resilience (Telegram + social, ~20% of company revenue at start).</strong> Grew channel revenue 1.8x despite Russian platform bans and Telegram throttling → integrated MAX as a parallel platform, automated production workflow, restructured the team, introduced advanced analytics. Team of 4 regional specialists plus one strong lead."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Operating as player-manager</strong> across a small marketing org → owned strategy, hands-on execution and team development with no paid budget cover."
+        },
+        {
+          "type": "heading_3",
+          "text": "Marketing Leadership for International Startups → SaaS / EdTech / iPaaS"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Jan 2023 – Present</strong> → growth and CRM/lifecycle leadership across startups at different stages of international expansion"
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Latenode</strong> (iPaaS / AI Automation SaaS) → Marketing Advisor, Oct 2024 – Present. Growth and positioning for the shift to higher-ARPU B2B and white-label iPaaS. Delivered ROI calculator, adaptive landing strategy, ad campaigns for non-technical decision-makers."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Seneka</strong> (US EdTech, social-emotional learning for parents) → CMO, Jan 2023 – Jan 2025. Rebuilt Web2App funnel → CAC reduced 6x (−83%) in 4 months. Organic content engine 0 → 100K Instagram followers, 70M annual reach with 0.5 FTE → AI-assisted content factory (GPT, Midjourney) built before this stack became standard."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Adapty</strong> (subscription SaaS) → General Manager Marketing, Feb 2025 – May 2025. Short-term engagement leading marketing operations during the company's growth phase. Concluded by mutual agreement after scope re-alignment."
+        },
+        {
+          "type": "heading_3",
+          "text": "Head of CRM, Yandex Eats → Foodtech / Marketplace"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Nov 2021 – Jan 2023</strong> → built CRM as a function from scratch in one of the two leaders of the Russian food delivery market"
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>+5% incremental revenue on a mature product</strong> within one quarter of starting, measured via control group. Held for a second quarter, then naturally slowed → reported the slowdown honestly to leadership rather than chasing an impossible pace."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Brand affinity matrix across tens of thousands of brands</strong> → behavioral scoring layer (offline visit → page view → add-to-cart → purchase → repeat → complaint) that answered \"what to offer this user\" without waiting for a full ML model. Later accelerated with an ML model built jointly with Yandex's predictive analytics team."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Four-scenario segmentation</strong> (everyday restaurants, premium restaurants for corporate, large grocery basket, Lavka express) → reshaped communication schedules and tone per scenario, layered on top of demo / RFM logic."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Team grew from 3 to 18–20 people</strong> including outstaff. Infrastructure and methodology stayed with the company; I continued running an internal CRM course for the team for almost a year after my departure."
+        },
+        {
+          "type": "heading_3",
+          "text": "Head of CRM, Out of Cloud → CRM Agency, 30+ Enterprise Clients"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Jun 2020 – Oct 2021</strong> → joined when 2 of 3 strategists had quit from burnout and the third was leaving → effectively acted as Head of CRM for 30+ retail and consumer brands"
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Owned the full 30+ client portfolio personally</strong> (up to 12 client meetings per day) while building the next generation of strategists → designed and ran a 3-month internship program with weekly drop-offs → grew the team from 1 to 10 in 16 months."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Published client outcomes during this period:</strong> Vprok.ru (X5) CRM share of revenue 5% → 10% (+200M RUB incremental); email header CTR 10% → 20% on a 10.2% market benchmark. Haier on-site contact capture 0.67% → 1.2% (+$30K/month). Vita Pharmacies CRM launched from zero, KPI doubled in 3 weeks. JBL/Harman 5,000 new subscribers at 2.7x lower CPL than benchmark."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_3",
+          "text": "CRM &amp; Marketing Consulting"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Jun 2015 – May 2020</strong> → 9 retail engagements and 12 startup engagements across foodtech, fashion, marketplace and SaaS."
+        },
+        {
+          "type": "heading_3",
+          "text": "CMO, KupiVip → Online Fashion Discounter (flash sales marketplace)"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Aug 2014 – Jun 2015</strong> → joined with 48 reports across 5 functional sub-departments, 4 of 5 sub-leads vacant, 18 KPIs from the investor board"
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>CRM share of revenue 11% → 74% in 11 months</strong> → built an in-house recommendation engine (72-page algorithm), tied email frequency to daily site conversion, designed \"preserves\" library for external event triggers, raised send frequency from 5 to 7 per day with no rise in unsubscribes after discovering users perceived emails as service, not spam."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Real audience insight (decile analysis + interviews)</strong> → reversed the brand strategy from aspirational-discount to quality-positioning, repositioned all communications and creatives."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>All 18 marketing KPIs delivered; first positive EBITDA in company history reported at the second quarterly investor meeting.</strong>"
+        },
+        {
+          "type": "heading_3",
+          "text": "CMO of Retail Loyalty Programs, Svyaznoy → Mobile Tech Retail (3,500 stores)"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Sep 2010 – Jun 2014</strong> → ran the loyalty function for one of the largest Russian retail chains of its era"
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Transactions per user 1.2 → 4.1</strong> across the full loyalty period through coalition program rebuild, behavioral segmentation, and a redesigned cross-brand acquisition layer (2,000 unique mechanics in 18 months)."
+        },
+        {
+          "type": "bulleted_list_item",
+          "text": "<strong>Decile analysis methodology + the \"Methylene Blue Method\"</strong> → discovered the first decile behaves as a leading indicator for future mass-market hits → redesigned the assortment matrix → +5% incremental revenue in a 15+15 store pilot. Methodology has stayed with me as a starting tool across every CRM project since."
+        },
+        {
+          "type": "heading_3",
+          "text": "CMO, EXPERT Retail → Consumer Electronics (320+ stores)"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Dec 2006 – May 2010</strong> → strategic marketing and cross-marketing programs for a national consumer electronics chain."
+        },
+        {
+          "type": "heading_3",
+          "text": "Marketing Analyst → CMO, MERLION → Computer Retail"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Nov 2002 – Nov 2006</strong> → launched the first national computer retail chain in Russia, scaled 0 → 150 stores in 9 months, revenue per sqm $1,000 → $3,000+."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Teaching"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>CRM Strategy Lecturer, ClientCore Agency</strong> → 2024 – Present → lectures for CRM strategists on segmentation, lifecycle architecture, analytical methodology."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Skills &amp; Stack"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>CRM / CDP platforms</strong> → Bloomreach Engagement (Exponea), Mindbox, HubSpot, 40+ platforms across foodtech, retail and SaaS.\n<strong>Analytics &amp; BI</strong> → Amplitude, Mixpanel, Looker Studio, Tableau, Power BI, GA4, Metabase.\n<strong>Methods</strong> → behavioral segmentation, lifecycle architecture, A/B testing at scale, decile analysis, brand affinity modeling, customer data infrastructure.\n<strong>AI / Automation</strong> → ChatGPT, Claude, Midjourney, n8n, Latenode."
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Languages"
+        },
+        {
+          "type": "paragraph",
+          "text": "English → Professional working proficiency (working language across US edtech, international SaaS, international teams)\nRussian → Native\nPortuguese → Elementary (improving, based in Portugal)\nDutch → Elementary"
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Education"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Reforge</strong> → Product, Growth, Retention &amp; Engagement, Social Strategy programs → 2024–2025\n<strong>Skolkovo Open University</strong> → Practicum for Directors (intensive 6-month executive program) → 2016\n<strong>Plekhanov Russian University of Economics</strong> → MA Marketing → 2001\n<strong>The Hague University of Applied Sciences (TH Rijswijk)</strong> → BS Marketing → 2001"
+        },
+        {
+          "type": "divider"
         }
       ]
     }
