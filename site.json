@@ -72,7 +72,7 @@
     {
       "id": "social_linkedin",
       "label": "LinkedIn",
-      "url": "linkedin.com/in/cmo-bio",
+      "url": "https://www.linkedin.com/in/cmo-bio",
       "order": 5,
       "visible": true,
       "type": "social"
