@@ -279,3 +279,18 @@ html, body {
     display: block;
     border: none;
 }
+
+
+/* Gallery cards for Work database */
+.notion-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:1.5em 0}
+@media(max-width:640px){.notion-gallery{grid-template-columns:1fr}}
+.gallery-card{border:1px solid var(--border-color);border-radius:var(--border-radius-lg);overflow:hidden;background:var(--bg-secondary);display:flex;flex-direction:column;transition:box-shadow 0.15s ease}
+.gallery-card:hover{box-shadow:var(--shadow-md)}
+.gallery-card-cover{width:100%;aspect-ratio:16/7;overflow:hidden;background:var(--bg-tertiary)}
+.gallery-card-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery-card-cover--empty{background:linear-gradient(135deg,var(--bg-tertiary) 0%,var(--border-color) 100%)}
+.gallery-card-body{padding:1rem 1.25rem 1.25rem;flex:1;display:flex;flex-direction:column;gap:0.25rem}
+.gallery-card-company{font-size:var(--font-size-body);font-weight:500;color:var(--text-primary);margin:0}
+.gallery-card-title{font-size:var(--font-size-body);color:var(--text-secondary);margin:0}
+.gallery-card-date{font-size:var(--font-size-small);color:var(--text-tertiary);margin:0 0 0.5rem}
+.gallery-card-desc{font-size:var(--font-size-small);color:var(--text-secondary);line-height:1.6;margin:0}
