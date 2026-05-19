@@ -95,7 +95,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "<strong>Maria Artemeva</strong>"
+          "text": "Hear of CRM "
         },
         {
           "type": "paragraph",
@@ -151,6 +151,10 @@
         },
         {
           "type": "divider"
+        },
+        {
+          "type": "heading_2",
+          "text": "Education"
         },
         {
           "type": "heading_2",
