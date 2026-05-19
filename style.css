@@ -294,3 +294,122 @@ html, body {
 .gallery-card-title{font-size:var(--font-size-body);color:var(--text-secondary);margin:0}
 .gallery-card-date{font-size:var(--font-size-small);color:var(--text-tertiary);margin:0 0 0.5rem}
 .gallery-card-desc{font-size:var(--font-size-small);color:var(--text-secondary);line-height:1.6;margin:0}
+
+
+/* ── Modal (Work card detail) ────────────────────────────────────────────── */
+.modal-open { overflow: hidden; }
+
+.work-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+.work-modal-overlay.is-open { display: flex; }
+
+.work-modal {
+  position: relative;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  max-width: 680px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.work-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--bg-tertiary);
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--text-secondary);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.work-modal-close:hover { background: var(--border-color); color: var(--text-primary); }
+
+.work-modal-cover {
+  width: 100%;
+  max-height: 240px;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+  flex-shrink: 0;
+}
+.work-modal-cover img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.work-modal-body {
+  padding: 1.75rem 2rem 2rem;
+}
+
+.work-modal-company {
+  font-size: var(--font-size-body);
+  color: var(--text-secondary);
+  margin: 0 0 0.25rem;
+}
+
+.work-modal-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  color: var(--text-primary);
+  margin: 0 0 0.25rem;
+  line-height: var(--line-height-heading);
+}
+
+.work-modal-date {
+  font-size: var(--font-size-small);
+  color: var(--text-tertiary);
+  margin: 0 0 1.5rem;
+}
+
+.work-modal-content {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--text-primary);
+}
+.work-modal-content p { margin: 0 0 1em; }
+.work-modal-content h2 { font-family: var(--font-heading); font-size: var(--font-size-h3); margin: 1.5em 0 0.5em; }
+.work-modal-content h3 { font-family: var(--font-heading); font-size: var(--font-size-h4); margin: 1.25em 0 0.4em; }
+.work-modal-content h4 { font-weight: 600; margin: 1em 0 0.4em; }
+.work-modal-content blockquote {
+  border-left: 3px solid var(--accent-color);
+  background: var(--quote-bg);
+  color: var(--quote-text);
+  padding: 0.75rem 1rem;
+  margin: 1em 0;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+.work-modal-content hr { border: 0; border-top: 1px solid var(--border-color); margin: 1.5em 0; }
+.work-modal-content li { margin: 0.3em 0 0.3em 1.5em; }
+.work-modal-content img { max-width: 100%; border-radius: var(--border-radius-md); }
+
+/* Make gallery cards show pointer cursor */
+.gallery-card { cursor: pointer; }
+.gallery-card:focus { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+
+@media (max-width: 640px) {
+  .work-modal-overlay { padding: 0; align-items: flex-end; }
+  .work-modal { max-height: 95vh; border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0; }
+}
