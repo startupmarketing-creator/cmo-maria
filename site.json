@@ -94,14 +94,6 @@
     "about": {
       "blocks": [
         {
-          "type": "heading_1",
-          "text": "Hear of CRM "
-        },
-        {
-          "type": "paragraph",
-          "text": "<a href=\"https://t.me/StartupAndMarketing\"><strong>Telegram </strong></a>//<strong> </strong><a href=\"https://www.linkedin.com/in/cmo-bio\"><strong>Linkedin </strong></a><strong>// </strong><a href=\"https://api.whatsapp.com/send/?phone=%2B351912876062&text=&type=phone_number&app_absent=0\"><strong>WhatsApp </strong></a><strong>// </strong><a href=\"mailto:Maria@cmo.bio\"><strong>Email </strong></a><strong>// </strong><a href=\"http://cmo.bio/\"><strong>CMO.bio</strong></a>"
-        },
-        {
           "type": "heading_2",
           "text": "What I Do the Best"
         },
