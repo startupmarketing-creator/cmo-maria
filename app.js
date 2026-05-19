@@ -94,10 +94,10 @@ function renderGallery(block) {
               }
               html += '<div class="gallery-card-body">';
               if (card.company) {
-                        html += '<p class="gallery-card-company">' + card.company + '</p>';
+                        html += '<p class="gallery-card-company">' + card.jobTitle + '</p>';
               }
               if (card.jobTitle) {
-                        html += '<p class="gallery-card-title">' + card.jobTitle + '</p>';
+                        html += '<p class="gallery-card-title">' + card.company + '</p>';
               }
               if (card.date) {
                         html += '<p class="gallery-card-date">' + formatDate(card.date) + '</p>';
