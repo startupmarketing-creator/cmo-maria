@@ -95,7 +95,7 @@
       "blocks": [
         {
           "type": "image",
-          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/a2e8583f-c46b-427d-a808-8703e76e6dea/264a2ee1-13eb-45f6-9cd6-a5353a12510e/Maria_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VYI7E5KA%2F20260519%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260519T175617Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBEaCXVzLXdlc3QtMiJHMEUCIBDRI%2BOBJpI0RQzoBY2n5VWLtXFWOm%2BlQym37QZ9IoaTAiEAvVHEXtbkLRUBQ5poqhmKz1rek7Gf7GwwTRMXP4dHyG4qiAQI2v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDF680oqArTV77Gk%2FkircAzai3IpYYf0uVcR657xOHSCFAM8HxMkVDclb%2FZ3XL5XdfbVZ5IvffPjNLhV%2B89TT7gfGwpCBB3nkO0AWJJIxn7w6EMAgAmjTkAlBtrJM2Dtpt9YABnajz40JuJyeRT%2B7qRaX1zzcUtbf8MxP6UvhDsFch33mBGC6x0ox6c8yj3nSKMSH2lwPwMBY%2FecmNms098bpdzgs79ISkVLLGxiOLSCfN%2FbtTOLWcJb79SRh1KFZNwfDods283Ex5H43cz6sB8rJ%2BQiW5cuQO6GaU%2F%2B83hocTuzKe2ZmxGMhsPeu9IyBTTBLdNNcQhL3o78qt8oEcu9e303%2BR2BC2FuR%2BbdA3gURlCwFVtTCjcCROAD0sEuqYTg16FbADTXr8o8h2AcRQvbGKemDQHSYidi%2BUIrLOcuVFqueBU%2B44%2Br47cHhrDWmgz%2Buc4wz0E19cE5cHpdPcdQqJgYonwExqgBnofLl0C8BfIMlB%2FZfd8QQCzz%2Fti5G36q9KmM05CF%2B8bBBRXMh%2BeHp73Tf21QcVXnvJVKsKftg0x%2Fx06kmtGAM5emUx5KXoe%2FQsvGZQHohPtdMyUngWcV4p6ESyA4DPB9aOkC17nJBmFWSuuv7PBrc9yXXSWx%2FqbslQjFWG0HQQZWdMKa2stAGOqUBJC1CIHzMpMB9XwGoUEwZOCtp2eer9q45jVxx1%2FhxgdEXp5tLHbtp89DquXTRSRcpFR6%2F4CTXhwuJxpQJIihDPoRc15FSmqul2RTQqvtFrLZ1Xarh0JI9mvfhcTe7z%2FtWPG7g9%2F802ry1G%2BprujA1xvTme%2FogPl0jzP4yKbCfcXDacX%2BMRPZGzlfEsLDXUs9tWjT9nvYmgRC721E6ibvT%2BjI1jzOP&X-Amz-Signature=20292254d9ddb704378c8e19843a71f9da60e2177032581228dbee1f601f298f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/a2e8583f-c46b-427d-a808-8703e76e6dea/264a2ee1-13eb-45f6-9cd6-a5353a12510e/Maria_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QFXBPXXS%2F20260519%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260519T180214Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCXVzLXdlc3QtMiJIMEYCIQCH5BG3vpHuURE31ZfL3E0RssYFXRWSkp%2F0GBtqKLCUNwIhAOIYb7wLPJTjp9e11fWefqQitPCh6hwXpMX%2B0QpNOt3vKogECNr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxIfVNvu41rQXRfEVgq3AN%2B8z6%2FkfQb%2BALbEacd7PWciLquPa79qeQ0gyR0WvetIHpJ%2FcP11bAi8RUMkZRgajRYano05nqok8s0FfFS4nrr4HmgmSZdMjNFeb8%2FJPEIQW%2BD%2BlnMZVKaZqbxZsHw1QKM8pxEVCEcfyjmoKnRS2HiA3KNK6TICKEBP1%2FsEu6azwjTwlRWR35JPRvSTHnGOYhcchrAmSxLTsKvgHHzVGxmeWaNe6IJ3QCcYyeVROCLMP0K8LvZY4S7AnBTxoEiVMQzDHWYF1ulMwQJDPyzaWgChU54lZUdFZjjCtHZzo%2BajjbFJakP2pJNHWuI3LvHPbJxAeQTy3hXnzd%2Be92ddU%2BSHj3KKhMmXDinhECEMfRiL1nJTjCMPgf8IfCczmX10AYHGlV9kFateuiDmIM9JIzjcqGeW645jq2ImqTl9uod9wZEjfw%2FYAXTchZ4UtBNirREoagcjyQJmY1S3M91NkxiXD2kT3OcErp%2Fy5EIyDSSbHvCQm2J4WpWGxBB1bHbhN2ukEmq17tC%2B0FyFtUaKoXhhiIXec0BG76kgHciDxYK6B9rITcDDir5FrkjCUzdMFcvYmUmWjdvaAlemWvpbrrgzSgwox2i2CO4g3YmiGgiqYvKWWWZvyaxC6BxqzDTt7LQBjqkAZsHPM0b3LwmXyLq6TetJt8HXYar%2F38P0giur80qICGWQ%2FIqmGOSWMDl64mzTK5Z6lIIkgyXGFQ4w03N7cX0%2F3ofGUmabyHXfiV6luIIzVneUfYUuZAJF9bVc5AGG2XtnEQr6OeSVHnnHvKMuRsfYlF2X63Y0VW70zRy%2BQY5SzyPGiRK5npejih41r1hqiYU%2BY2GrOfPLc2I%2FUV5XJA3C0bJ8nwd&X-Amz-Signature=56a98aad4fc29c29dc1af44f7c2fe5078c15fe771e03c0ea7ab58001c3e06ef7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
           "caption": ""
         },
         {
@@ -295,71 +295,71 @@
             {
               "cover": "",
               "date": "2025-08-01",
-              "jobTitle": "Regional E-commerce Marketplace",
-              "company": "<strong>Chief Marketing Officer</strong>",
+              "jobTitle": "<strong>Chief Marketing Officer</strong>",
+              "company": "Regional E-commerce Marketplace",
               "desc": "Built CRM and owned channels into the entire growth engine of a fashion-focused regional marketplace with no paid acquisition by design. In 8 months: quadrupled email revenue per delivered message, brought popup buyout from 12% to 45%, all with sub-1 FTE on CRM."
             },
             {
               "cover": "",
               "date": "2024-10-01",
-              "jobTitle": "Marketing Expert — SaaS platforms",
-              "company": "<strong>General Marketing Manager</strong>",
+              "jobTitle": "<strong>General Marketing Manager</strong>",
+              "company": "Marketing Expert — SaaS platforms",
               "desc": "\nMarketing leadership across international SaaS platforms — General Marketing Manager at Adapty (subscription SaaS) and Marketing Advisor at Latenode (iPaaS / AI Automation). Work focused on growth and positioning for international expansion."
             },
             {
               "cover": "",
               "date": "2023-01-01",
-              "jobTitle": "<a href=\"https://www.savvykid.app/\">Savvy KID</a> — EdTech Startup. US",
-              "company": "<strong>CMO</strong>",
+              "jobTitle": "<strong>CMO</strong>",
+              "company": "<a href=\"https://www.savvykid.app/\">Savvy KID</a> — EdTech Startup. US",
               "desc": "Marketing strategy and execution for a US EdTech startup focused on social-emotional learning for parents. Reduced CAC 6x in 4 months through Web2App funnel rebuild. Grew Instagram from zero to 100K followers and 70M annual reach with sub-1 FTE using an AI-assisted content factory."
             },
             {
               "cover": "",
               "date": "2021-10-01",
-              "jobTitle": "Yandex Eats — #1 online food retailer.",
-              "company": "<strong>Head of CRM</strong>",
+              "jobTitle": "<strong>Head of CRM</strong>",
+              "company": "Yandex Eats — #1 online food retailer.",
               "desc": "Built the CRM function from scratch at one of the two leaders of Russian food delivery. Within one quarter: +5% incremental revenue on a mature product, measured via control group. Team grew from 3 to 18-20 people. Designed a behavioral brand affinity matrix across tens of thousands of brands."
             },
             {
               "cover": "",
               "date": "2020-06-01",
-              "jobTitle": "Out of Cloud — TOP CRM Agency.",
-              "company": "<strong>Head of CRM</strong>",
+              "jobTitle": "<strong>Head of CRM</strong>",
+              "company": "Out of Cloud — TOP CRM Agency.",
               "desc": "Acted as Head of CRM across 30+ enterprise clients including <a href=\"http://vprok.ru/\">Vprok.ru</a> (X5), Haier, JBL/Harman, Vita Pharmacies. Built the agency's strategist function from 1 to 10 people in 16 months through a repeatable internship program that stayed as part of the operating model."
             },
             {
               "cover": "",
               "date": "2015-06-30",
-              "jobTitle": "CRM at Retail &amp; Startup Projects.",
-              "company": "<strong>Marketing Consulting Expert</strong>",
+              "jobTitle": "<strong>Marketing Consulting Expert</strong>",
+              "company": "CRM at Retail &amp; Startup Projects.",
               "desc": "9 retail engagements and 12 startup engagements across foodtech, fashion, marketplace, and SaaS. Mix of CMO-interim, Head-of-CRM-fractional, and strategic advisory roles."
             },
             {
               "cover": "",
               "date": "2014-08-01",
-              "jobTitle": "<a href=\"http://kupivip.ru/\">KupiVip.ru</a>  — online fashion retailer.",
-              "company": "<strong>CMO</strong>",
+              "jobTitle": "<strong>CMO</strong>",
+              "company": "<a href=\"http://kupivip.ru/\">KupiVip.ru</a>  — online fashion retailer.",
               "desc": "Led marketing during a turnaround year at one of Russia's largest fashion flash-sales marketplaces. Grew CRM share of revenue from 11% to 74% in 11 months, driving the first positive EBITDA in company history. Rebuilt audience strategy through decile analysis and deep interviews."
             },
             {
               "cover": "",
               "date": "2010-09-01",
-              "jobTitle": "Svyaznoy  — #1 mobile phone retailer.",
-              "company": "CMO of Retail Loyalty Program",
+              "jobTitle": "CMO of Retail Loyalty Program",
+              "company": "Svyaznoy  — #1 mobile phone retailer.",
               "desc": "Led the loyalty function for one of the largest Russian retail chains of its era (3,500 stores, 18M loyalty members). Transactions per user grew from 1.2 to 4.1. Designed the decile analysis methodology and \"Methylene Blue Method\" framework I now apply in every retail and digital project."
             },
             {
               "cover": "",
               "date": "2006-12-01",
-              "jobTitle": "Expert — electronics store chain.",
-              "company": "CMO",
+              "jobTitle": "CMO",
+              "company": "Expert — electronics store chain.",
               "desc": "Marketing strategy and cross-marketing programs for a national consumer electronics retail chain (320+ stores). Nationwide brand campaigns, cross-brand partnership mechanics, category-level retail marketing."
             },
             {
               "cover": "",
               "date": "2002-11-01",
-              "jobTitle": "<strong>Merlion</strong> — <strong> </strong>#1 <strong>computer distributor.</strong>",
-              "company": "<strong>Marketing Analyst, Brand Manager, Head of Marketing</strong>",
+              "jobTitle": "<strong>Marketing Analyst, Brand Manager, Head of Marketing</strong>",
+              "company": "<strong>Merlion</strong> — <strong> </strong>#1 <strong>computer distributor.</strong>",
               "desc": "Grew from analyst to Head of Marketing over four years. Launched the first national computer retail chain in Russia from zero — scaled 0 to 150 stores in 9 months, revenue per square meter grew from $1,000 to $3,000+."
             }
           ]
