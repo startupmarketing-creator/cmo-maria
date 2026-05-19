@@ -95,7 +95,7 @@
       "blocks": [
         {
           "type": "image",
-          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/a2e8583f-c46b-427d-a808-8703e76e6dea/264a2ee1-13eb-45f6-9cd6-a5353a12510e/Maria_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46636OPNKFW%2F20260519%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260519T172727Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCXVzLXdlc3QtMiJHMEUCIA6u8aFSxEmmgEHPGY4DQKfbmbQerriZ8ix4zPWe1ZUXAiEAtcLVt8UmQhuSQniHgUc3c6ZWTQPp1xNSKXzynwbuSTcqiAQI2v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPme71wrgYgTpS9o0CrcAwZ%2Fffr0vUXw%2F1eGERmx2WtI0Ux%2Btp3bM3dzCZcBfX%2Bo7XTBOdj4H%2B1m6co%2BoYxfjEz71ZCXaXpHlJ3dzfroWp%2BxcGIMn%2BV7cFsUZpQlEmxlepEfNoSUKcCV%2BrZqKOZGr%2F8gzk9OIzgs4LM3x3yXTskCA1szEKLvyERtRAnApMyQgfZ5iWKt9wXIGyNC46sYUf60UZ4tYHFmTVOQPR6FpHlsIjh70wJjmMcjcAbSya9LCwzjJMSQ%2Fs1S4FejT6iZQ8%2F0zl61a5YKtyKdGrZej1mD9CI47K%2B1yu20BWTcfBiF1BqdZRWrtKTzK5MdoIyiHJ2UmZ%2F4YeXpqgj%2BclZQxqq6PAy8GZH6RX9yipCgU0fsGtXbCQHdJz8YpCTOoa8XsaSMJeKa6gtfbWrlH7vEX6M7dmSTQz1izGvWR4C85m0GOSsw3dOndZipghJ0jgvU%2Bg3d7lXAkZmgtsCFwFNxnMBqHOoMDBw7TEcO79l7Zpg2AOt9tKX9V5Ft9tkRQR5Edm9g8%2FUDvYMf%2Bp8kn5Lhk%2BOzhG4iMdxgwBOm%2B%2Fkn0SsXauSKeZSNjG9%2FHQrUrBJHkMmRCKavxTwBNSb6PjVhzHcv65MeuprPBr5D72rE5sLf0oLxViIxNHsT1HlwMPe3stAGOqUBQHGPNfZhfH4OEmJ2xU0hVRVs0n92YXQWbeotHRwQBpW0iRxeS2I6I%2BL9e5N32o7uI1nJ9g1mudppHf9LTEdvGeJsRkHuUfxtHZZDWMl6a0ptTmwiu0BwenntKCUPfkDhYFs008cZsW3y6FHJQfezDombZJ50jEi0FlEvUrAfUHKXf1tQj%2FS6XdDokcBp9lOm4CY1%2FrR6DJKEj9yefzQwum5RpVVH&X-Amz-Signature=0553f2fef8af98b562d6fa3af4d13dcf3d494f1c0c7d527b63ed0b185c5fe671&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/a2e8583f-c46b-427d-a808-8703e76e6dea/264a2ee1-13eb-45f6-9cd6-a5353a12510e/Maria_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663OUQ2BOC%2F20260519%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260519T173358Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBIaCXVzLXdlc3QtMiJGMEQCIA8YsP13Io%2BUQ8M4ceAZm30BxSoLP05P%2FxlxkxF57LWyAiBCCHJPAuKKdDFTjVEkJJY37Nf6VA2aVuSZtAAoZm4dDCqIBAja%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMej2uxvOzPZ6mGqn%2FKtwDi9swFrHEYdk4I%2BJxYPr2sAqM2FG%2Bx1VP%2FnMO5LH%2Fhc1Jx2JPo4SnYgFXwsmsI%2BvDwZ%2BST%2FfcHxBkNhM7PNgpKecoIQzSjKfXhxCKNm1W5oEOl%2FCc7ntjeFeDUKu8xKlaeqzbDM3BQA04B%2BcrDMA%2BXQf19T%2FLI7ClJe2JHPUoc6%2BnHtt787ODRvI4MclQqduZG%2FSyDpAjD33pXWmqWYnqEBR%2BFJx%2FGzTYKx71yNWx5z20vNP3dEX721hC0KKOHiPJfAo7ezpdjmMWpEnnLnJNEhbNA0c2R6kDr6wpVsyeh%2BsK6YdME08dl2NLEE7%2BqM%2BOSY%2F7hNsArcV0%2Fm%2B0j%2FN5fCTdKvUTn9%2BO5l6CDzpLRn95DB3hFSfvC8WSX%2FHRYkDSvcWp5G30z9HLs7Ax8E7joSWOodZV7Spl2ARSp%2Bq8oW2vyMg%2BYcpGTXuk0qCQqFaxJZ4lvUCCjZdCNW4BkGzCqG8fV72nnXTySMiYJPYnDP3YU0tTW9%2FbtDjyUcCbIlHMKzMQjyB92IMNOs6zhflCnfX3KHhkZ3KWnccf%2Fqs9VLwYgxQ22UZYXAJbiKhpcGhfnZcAxDBK4Hq0j5NrJB4dg04%2F%2BoHRk3977C9XkBJouY%2FXOP3c4rCEKPFXLiww1Ley0AY6pgEzwfnU94zQRBNs4zZcR0yAs0foMeDuMMcAOYOY%2FmTGdKG6oUwzyDU10Xbb2hysPQlB1%2FxIyfNSGl%2FMIkZp2gA4FJLHJfmzexkK%2BIPteQBTNxhYUrDWifEq2nYQ3SCwsU4XiFGNjOju%2BY9R4jNrT%2F0VmKrXFNstJRFyxc7l%2BCzUoBjTd%2Bf1Qk8acuss%2BBHZ2cuE%2Ba2VFvhllTnClKXUrRQqAnwpsjEj&X-Amz-Signature=23d531c75b3f2c14f89481f8199ac52f6bcc832bbdadb84170ee199de3c8f7b6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
           "caption": ""
         },
         {
@@ -287,6 +287,112 @@
         {
           "type": "bulleted_list_item",
           "text": "<strong>Dutch</strong> → elementary"
+        },
+        {
+          "type": "table",
+          "title": "Work",
+          "has_header": true,
+          "rows": [
+            [
+              "ID",
+              "Date",
+              "References",
+              "Position ",
+              "Description",
+              "Position",
+              "GitHub Pull Requests"
+            ],
+            [
+              "",
+              "2025-08-01",
+              "",
+              "<strong>Chief Marketing Officer</strong>",
+              "Built CRM and owned channels into the entire growth engine of a fashion-focused regional marketplace with no paid acquisition by design. In 8 months: quadrupled email revenue per delivered message, brought popup buyout from 12% to 45%, all with sub-1 FTE on CRM.",
+              "Regional E-commerce Marketplace",
+              ""
+            ],
+            [
+              "",
+              "2024-10-01",
+              "",
+              "<strong>General Marketing Manager</strong>",
+              "\nMarketing leadership across international SaaS platforms — General Marketing Manager at Adapty (subscription SaaS) and Marketing Advisor at Latenode (iPaaS / AI Automation). Work focused on growth and positioning for international expansion.",
+              "Marketing Expert — SaaS platforms",
+              ""
+            ],
+            [
+              "",
+              "2002-11-01",
+              "",
+              "<strong>Marketing Analyst, Brand Manager, Head of Marketing</strong>",
+              "Grew from analyst to Head of Marketing over four years. Launched the first national computer retail chain in Russia from zero — scaled 0 to 150 stores in 9 months, revenue per square meter grew from $1,000 to $3,000+.",
+              "<strong>Merlion</strong> — <strong> </strong>#1 <strong>computer distributor.</strong>",
+              ""
+            ],
+            [
+              "",
+              "2006-12-01",
+              "",
+              "CMO",
+              "Marketing strategy and cross-marketing programs for a national consumer electronics retail chain (320+ stores). Nationwide brand campaigns, cross-brand partnership mechanics, category-level retail marketing.",
+              "Expert — electronics store chain.",
+              ""
+            ],
+            [
+              "",
+              "2010-09-01",
+              "",
+              "CMO of Retail Loyalty Program",
+              "Led the loyalty function for one of the largest Russian retail chains of its era (3,500 stores, 18M loyalty members). Transactions per user grew from 1.2 to 4.1. Designed the decile analysis methodology and \"Methylene Blue Method\" framework I now apply in every retail and digital project.",
+              "Svyaznoy  — #1 mobile phone retailer.",
+              ""
+            ],
+            [
+              "",
+              "2014-08-01",
+              "",
+              "<strong>CMO</strong>",
+              "Led marketing during a turnaround year at one of Russia's largest fashion flash-sales marketplaces. Grew CRM share of revenue from 11% to 74% in 11 months, driving the first positive EBITDA in company history. Rebuilt audience strategy through decile analysis and deep interviews.",
+              "<a href=\"http://kupivip.ru/\">KupiVip.ru</a>  — online fashion retailer.",
+              ""
+            ],
+            [
+              "",
+              "2015-06-30",
+              "",
+              "<strong>Marketing Consulting Expert</strong>",
+              "9 retail engagements and 12 startup engagements across foodtech, fashion, marketplace, and SaaS. Mix of CMO-interim, Head-of-CRM-fractional, and strategic advisory roles.",
+              "CRM at Retail &amp; Startup Projects.",
+              ""
+            ],
+            [
+              "",
+              "2023-01-01",
+              "",
+              "<strong>CMO</strong>",
+              "Marketing strategy and execution for a US EdTech startup focused on social-emotional learning for parents. Reduced CAC 6x in 4 months through Web2App funnel rebuild. Grew Instagram from zero to 100K followers and 70M annual reach with sub-1 FTE using an AI-assisted content factory.",
+              "<a href=\"https://www.savvykid.app/\">Savvy KID</a> — EdTech Startup. US",
+              ""
+            ],
+            [
+              "",
+              "2020-06-01",
+              "",
+              "<strong>Head of CRM</strong>",
+              "Acted as Head of CRM across 30+ enterprise clients including <a href=\"http://vprok.ru/\">Vprok.ru</a> (X5), Haier, JBL/Harman, Vita Pharmacies. Built the agency's strategist function from 1 to 10 people in 16 months through a repeatable internship program that stayed as part of the operating model.",
+              "Out of Cloud — TOP CRM Agency.",
+              ""
+            ],
+            [
+              "",
+              "2021-10-01",
+              "",
+              "<strong>Head of CRM</strong>",
+              "Built the CRM function from scratch at one of the two leaders of Russian food delivery. Within one quarter: +5% incremental revenue on a mature product, measured via control group. Team grew from 3 to 18-20 people. Designed a behavioral brand affinity matrix across tens of thousands of brands.",
+              "Yandex Eats — #1 online food retailer.",
+              ""
+            ]
+          ]
         }
       ]
     }
