@@ -94,7 +94,7 @@
     "about": {
       "blocks": [
         {
-          "type": "paragraph",
+          "type": "heading_1",
           "text": "Hear of CRM "
         },
         {
@@ -107,19 +107,35 @@
         },
         {
           "type": "paragraph",
-          "text": "I take CRM from \"one of the channels\" to the <span style=\"background:green\">dominant revenue engine</span>."
+          "text": "<span style=\"background:default\">I</span><span style=\"background:default\"> take CRM from \"one of the channels\" to the dominant revenue engine.</span>"
         },
         {
           "type": "paragraph",
-          "text": "Across CMO-tenures and Head-of-CRM roles, I've built CRM functions from zero, scaled teams up to 18 people, and led transformations where CRM became the primary driver of growth."
+          "text": "<span style=\"background:default\">Across CMO-tenures and Head-of-CRM roles, I've built CRM functions from zero, scaled teams up to 18 people, and led transformations where CRM became the primary driver of growth.</span>"
+        },
+        {
+          "type": "heading_3",
+          "text": "<span style=\"background:default\"><strong>What I'm strongest at:</strong></span>"
         },
         {
           "type": "paragraph",
-          "text": "<strong>What I'm strongest at:</strong>"
+          "text": "<span style=\"background:default\">– Building CRM functions from scratch in marketplace and consumer e-commerce contexts</span>"
         },
         {
           "type": "paragraph",
-          "text": "– <span style=\"background:default\">Building </span><span style=\"background:yellow\">CRM functions from scratch</span> in marketplace and consumer e-commerce contexts\n– Designing <span style=\"background:orange\">customer data architectures</span> and behavioral segmentation frameworks\n– <span style=\"background:purple\">Leading teams </span>across strategy, lifecycle, analytics, and execution\n– Applying A/B testing at scale and decile analysis to find real audience and <span style=\"background:var(--accent-color)\">growth levers</span>\n– Bridging data, product, and brand stakeholders to <span style=\"background:green\">align CRM with business outcomes</span>"
+          "text": "<span style=\"background:default\">– Designing customer data architectures and behavioral segmentation frameworks</span>"
+        },
+        {
+          "type": "paragraph",
+          "text": "<span style=\"background:default\">– Leading teams across strategy, lifecycle, analytics, and execution</span>"
+        },
+        {
+          "type": "paragraph",
+          "text": "<span style=\"background:default\">– Applying A/B testing at scale and decile analysis to find real audience and growth levers</span>"
+        },
+        {
+          "type": "paragraph",
+          "text": "<span style=\"background:default\">– Bridging data, product, and brand stakeholders to align CRM with business outcomes</span>"
         },
         {
           "type": "heading_2",
@@ -131,23 +147,46 @@
         },
         {
           "type": "paragraph",
-          "text": "<span style=\"color:gray\"><em>Yandex Eats → Foodtech / Marketplace</em></span><em>\n</em>Built the CRM function from scratch at one of the two leaders of Russian food delivery. Within one quarter: <strong>+5% incremental revenue</strong> on a mature product, measured via control group. Team grew <strong>from 3 to 18-20 people</strong>. Designed a behavioral brand affinity matrix across tens of thousands of brands."
+          "text": "<span style=\"color:gray\"><em>Yandex Eats → Foodtech / Marketplace</em></span>"
         },
         {
           "type": "paragraph",
-          "text": "<span style=\"color:gray\"><em>KupiVip → Online Fashion Discounter\n</em></span>Led marketing at one of Russia's largest fashion flash-sales marketplaces during a turnaround year. <strong>CRM share of revenue 11% → 74% in 11 months.</strong> Drove the <strong>first positive EBITDA in company history</strong>. Rebuilt audience strategy through decile analysis + deep interviews."
+          "text": "Built the CRM function from scratch at one of the two leaders of Russian food delivery. Within one quarter: <strong>+5% incremental revenue</strong> on a mature product, measured via control group. Team grew <strong>from 3 to 18-20 people</strong>. Designed a behavioral brand affinity matrix across tens of thousands of brands."
         },
         {
           "type": "paragraph",
-          "text": "<span style=\"color:gray\"><em>Out of Cloud (CRM Agency) → 30+ Enterprise Clients\n</em></span>Acted as Head of CRM across a portfolio including Vprok.ru (X5), Haier, JBL/Harman, Vita Pharmacies. Built the strategist function <strong>from 1 to 10 people in 16 months</strong>. Published client outcomes: Vprok CRM share <strong>5% → 10% (+200M RUB)</strong>, Haier capture rate <strong>0.67% → 1.2%</strong>, JBL CPL <strong>2.7x below benchmark</strong>."
+          "text": "<span style=\"color:gray\"><em>KupiVip → Online Fashion Discounter</em></span>"
         },
         {
           "type": "paragraph",
-          "text": "<span style=\"color:gray\"><em>Confidential E-commerce Marketplace (2025–present) → Fashion / Group-buy\n</em></span>Currently CMO at a regional marketplace with no paid acquisition channel by design. In 8 months: email revenue per delivered message <strong>1.8 → 7 RUB (4x)</strong>, channel revenue <strong>5x</strong>, popup cart buyout rate <strong>12% → 45%</strong>. Protected social channels through platform disruption (<strong>+1.8x</strong>). All with <strong>less than 1 FTE on CRM</strong>."
+          "text": "Led marketing at one of Russia's largest fashion flash-sales marketplaces during a turnaround year. <strong>CRM share of revenue 11% → 74% in 11 months.</strong> Drove the <strong>first positive EBITDA in company history</strong>. Rebuilt audience strategy through decile analysis + deep interviews."
         },
         {
           "type": "paragraph",
-          "text": "<span style=\"color:gray\"><em>Svyaznoy → Mobile Tech Retail, 3,500 Stores\n</em></span>Loyalty function lead for one of the largest Russian retail chains of its era. <strong>Transactions per user 1.2 → 4.1.</strong> Designed the decile analysis methodology and \"Methylene Blue Method\" framework I now apply across every retail and digital project."
+          "text": "<span style=\"color:gray\"><em>Out of Cloud (CRM Agency) → 30+ Enterprise Clients</em></span>"
+        },
+        {
+          "type": "paragraph",
+          "text": "Acted as Head of CRM across a portfolio including Vprok.ru (X5), Haier, JBL/Harman, Vita Pharmacies. Built the strategist function <strong>from 1 to 10 people in 16 months</strong>. Published client outcomes: Vprok CRM share <strong>5% → 10% (+200M RUB)</strong>, Haier capture rate <strong>0.67% → 1.2%</strong>, JBL CPL <strong>2.7x below benchmark</strong>."
+        },
+        {
+          "type": "paragraph",
+          "text": "<span style=\"color:gray\"><em>Confidential E-commerce Marketplace (2025–present) → Fashion / Group-buy</em></span>"
+        },
+        {
+          "type": "paragraph",
+          "text": "Currently CMO at a regional marketplace with no paid acquisition channel by design. In 8 months: email revenue per delivered message <strong>1.8 → 7 RUB (4x)</strong>, channel revenue <strong>5x</strong>, popup cart buyout rate <strong>12% → 45%</strong>. Protected social channels through platform disruption (<strong>+1.8x</strong>). All with <strong>less than 1 FTE on CRM</strong>."
+        },
+        {
+          "type": "paragraph",
+          "text": "<span style=\"color:gray\"><em>Svyaznoy → Mobile Tech Retail, 3,500 Stores</em></span>"
+        },
+        {
+          "type": "paragraph",
+          "text": "Loyalty function lead for one of the largest Russian retail chains of its era. <strong>Transactions per user 1.2 → 4.1.</strong> Designed the decile analysis methodology and \"Methylene Blue Method\" framework I now apply across every retail and digital project."
+        },
+        {
+          "type": "divider"
         },
         {
           "type": "divider"
@@ -155,6 +194,9 @@
         {
           "type": "heading_2",
           "text": "Education"
+        },
+        {
+          "type": "divider"
         },
         {
           "type": "heading_2",
