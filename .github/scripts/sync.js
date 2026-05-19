@@ -246,7 +246,31 @@ async function databaseToGallery(obj) {
               return null;
       }
 
-      const cards = rows.map(row => {
+      // Helper: convert blocks to simple HTML for modal body
+      function blocksToHtml(blocks) {
+        let html = '';
+        for (const b of blocks) {
+          const type = b.type;
+          const c = b[type];
+          if (!c) continue;
+          const rt = richTextToHtml(c.rich_text || []);
+          if (type === 'heading_1') html += '<h2>' + rt + '</h2>';
+          else if (type === 'heading_2') html += '<h3>' + rt + '</h3>';
+          else if (type === 'heading_3') html += '<h4>' + rt + '</h4>';
+          else if (type === 'paragraph' && rt) html += '<p>' + rt + '</p>';
+          else if (type === 'bulleted_list_item') html += '<li>' + rt + '</li>';
+          else if (type === 'numbered_list_item') html += '<li>' + rt + '</li>';
+          else if (type === 'quote') html += '<blockquote>' + rt + '</blockquote>';
+          else if (type === 'divider') html += '<hr>';
+          else if (type === 'image') {
+            const url = c.type === 'external' ? c.external.url : c.file ? c.file.url : '';
+            if (url) html += '<img src="' + url + '" style="max-width:100%;border-radius:8px;margin:1em 0">';
+          }
+        }
+        return html;
+      }
+
+      const cards = await Promise.all(rows.map(async row => {
               const cover       = extractCover(row);
               const dateProp    = findProp(row, 'Date', 'date', 'Start', 'Period');
               const titleProp   = findProp(row, 'Position ', 'Position', 'Title', 'Name', 'Role');
@@ -276,8 +300,16 @@ async function databaseToGallery(obj) {
                                    const date = dateProp ? propToDate(dateProp) : '';
               const desc = descProp ? propToHtml(descProp) : '';
 
-                                   return { cover, date, jobTitle, company, desc };
-      });
+                                   // Fetch full page body for modal
+                              let body = '';
+                              try {
+                                const pageBlocks = await fetchBlocks(row.id);
+                                body = blocksToHtml(pageBlocks);
+                              } catch (e) {
+                                console.log('  [page body error]:', e.message);
+                              }
+                              return { cover, date, jobTitle, company, desc, body };
+      }));
 
       // Sort by date descending (most recent first)
       cards.sort((a, b) => {
