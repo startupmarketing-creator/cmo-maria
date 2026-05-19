@@ -94,6 +94,12 @@
     "about": {
       "blocks": [
         {
+          "type": "callout",
+          "icon": "",
+          "text": "<strong>Building retention into the #1 revenue channel for businesses.</strong>",
+          "color": "#F1F1EF"
+        },
+        {
           "type": "heading_2",
           "text": "What I Do the Best"
         },
@@ -186,6 +192,32 @@
         {
           "type": "heading_2",
           "text": "Education"
+        },
+        {
+          "type": "table",
+          "has_header": false,
+          "rows": [
+            [
+              "2025 ",
+              "Reforge",
+              "Product Marketing Course"
+            ],
+            [
+              "2016 ",
+              "SKOLKOVO School of Management",
+              "Practicum for Directors"
+            ],
+            [
+              "2001 ",
+              "The Hague University of Applied Sciences",
+              "Business communication and Marketing"
+            ],
+            [
+              "2001 ",
+              "Plekhanov Russian University of Economics",
+              "Master's Degree in Marketing, Graduated with Honor"
+            ]
+          ]
         },
         {
           "type": "divider"
