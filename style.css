@@ -413,3 +413,39 @@ html, body {
   .work-modal-overlay { padding: 0; align-items: flex-end; }
   .work-modal { max-height: 95vh; border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0; }
 }
+
+/* References section in modal */
+.work-modal-references {
+margin: 0.75rem 0 1.25rem;
+padding: 0.75rem 1rem;
+background: var(--bg-secondary);
+border-radius: var(--border-radius-sm);
+border-left: 3px solid var(--accent-color);
+}
+
+.work-modal-refs-label {
+font-size: var(--font-size-small);
+font-weight: 600;
+color: var(--text-secondary);
+text-transform: uppercase;
+letter-spacing: 0.05em;
+margin: 0 0 0.5rem;
+}
+
+.work-modal-refs-list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+
+.work-modal-refs-list li {
+font-size: var(--font-size-small);
+color: var(--text-primary);
+background: var(--bg-primary);
+border: 1px solid var(--border-color);
+border-radius: 20px;
+padding: 0.2rem 0.75rem;
+}
