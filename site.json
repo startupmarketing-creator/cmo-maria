@@ -95,7 +95,7 @@
       "blocks": [
         {
           "type": "image",
-          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/a2e8583f-c46b-427d-a808-8703e76e6dea/264a2ee1-13eb-45f6-9cd6-a5353a12510e/Maria_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UYAGS3OD%2F20260519%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260519T165921Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBAaCXVzLXdlc3QtMiJHMEUCIQD4gQWHaIGlUZBIhBxJtefwcayhrrD8VpmyyBUoV%2FD1qwIgUSHx%2FipNqayECG502viNeCiEMBa7yQyL7FmjDGkd1noqiAQI2f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCLElBQly95vrpgTwircA2G4HfwMBC50X%2FCb4ID0o6aW9mwshn4SIXnlvdSfNYjDN%2FvLWnRyTHmEmEQNo%2BtuPNQpUVaQ2oOW4Yeq6PGM6yFv9%2BPw1Z%2F30vlfKHTMv5jhdML1gSW0%2FnNMZqj77FUGBEuo07SkFKLuQlu7EzTuJ7b4tUOpE%2FODtPH6jRKsuoOSTvzA1CBLHsZIAVICXcNMNrN8VRyZRANrFQauUPB8JUpSQ8bFC5HPeMYLAx5v%2BuV6ThYniIUJo%2F4HRe2Te8JIVOtU5j05uLDcFYH9XfKPTYb9N4BepDVW65cB8Yv4FzxrwhtcpU2dlIQwG3N62x0SYvTm%2B0%2F1L9bx00nNgg6dEFACNBK%2BhsaMP9Z1AE7WDGRweoSPFdHmbAzcGrxuTRsjecrnr9IyTgLxZLXqLdEBP1Dql1yImcGg9kYlBVQy2uK1JQfQEZDAHHimqf3m9gkuXRUGUUTXXCYB60EFv8%2FDink8PAfzz9R%2Fq%2ByPgN0nalGtKF6uU5KfHsghwhUwSF4TZbZKCOmn3xeLlxP4zWON4AavQkdpWWmwvdOlEz1BKrJFIv1GYNaDC1VWkLeEh%2FTz9%2B8CCfo0Gu%2ByHfCkC59YEjnb8TnIFWynVhhKkTrrWHrrbMsDxas9amjfB5hUMISRstAGOqUB7nchB1Ulpnd%2BrXzXhUfbJdkRDLwkRaF8UVDGCBptzzCdbj6fDHidK7D%2FvVgb0Y%2BooEBhlTge1hu4P7n4BG0Kkd1VT%2FXtz7WxzBt%2BNap%2FUrE5%2B7LU9D4i13j45DvblOcs3rpsy3MkNsS9%2FvKiJBVO2ZvDA3coseiBLlKbyU3t%2FVTT3OSgzvdLx3Xly%2FFSx4qdQ676G8pXJ2ClCGQExbfCzSLxdFeh&X-Amz-Signature=f16550d71da8a6fb2ddb93132de8c358de80ad1fb7c43b152de3a3c2078c85d2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+          "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/a2e8583f-c46b-427d-a808-8703e76e6dea/264a2ee1-13eb-45f6-9cd6-a5353a12510e/Maria_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RDKYNUOP%2F20260519%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260519T171214Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBEaCXVzLXdlc3QtMiJHMEUCIQCiEWdkriM9d2tQ17UJefWKO3nUYIY9sm3%2BsimStn5hOQIga5fVNS0jkv5HTXzYazALOA3MO4AZ7Juw6hooZGuFx9cqiAQI2v%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDEoWt1UJXxrkK3%2FluircA49yfKaaSfwLVszw4JbaqHUKakiTSz%2Bq%2BjPX%2FrEM45ikQaHjN3guwF9cq4CDO76eOomw1tSKqbXBBGKxcdi1f9t7kvCP3wJ0DzhD70c7qJQpxjzAD2rC5YfvRNDUDxbrDoKDE0uHBtWMHMcCtHKBWYkazpiZxFwnz9jpsiS4c0aDOXTfpJJE9FR%2BQluj4Hyqujepw0rktV9sCTHALYp9HZCF%2BNBq3QPh0peXuINB73MiESPBY54cpLQQyTMmL16%2BS1Q%2BS7pYKeloAFTbjX%2Fd7sTZH5EgWIKMUZXhK4r2WI26gX3ixZHFyUvd0UXExrfkPWhHDmdrl4LzxxD0D%2F2YFlDl0hex9IO6fQiERUg9HvPaEyYDx2TqgbGzBwfHJhL0FPlkaKguWTl2zIL4wF2CsRPweNYD38T8by%2BigrwBw%2BA1x6hS85RFQjMfSsX0QrzfWvT0Fl1HXMZMd1evsk%2B2KL4zLrt9sSvSvNbNLhdzE68MPEQNx9EsVtEb%2FuRQLmYTTDQDbalFIWzLs%2BzEvVNYD%2BgyxeqlL2hOJ4x7DMuZqGXvNVG%2BIKv5aEfpkpZvfqa%2BVXtc0UBXM%2BgzSDdeVbO0Px0HywJKVIrvSsvoTOz7fgbD15jr43K4sLCSdfQrMKqvstAGOqUBdEllGC2equAF1grmGc0fzwHL5pjiiEhWKN2uB%2BCr9HI0s9XYdtNoHkWdf4C7a0qpGIBHXOyNDRFB0Kdx5T8jXJ9%2FB2ZsB7BBoQU0ZCbQ2U2bNOgf00npbh3hKT9URo%2Fk6d2xeONXqWu3qZaZ%2BWv%2BJdoiz7BFtoWNu18Zt21Xcs1l0vnfGiWrNp0IYLqnqJ6MRkHrJsD0jH5%2B5oBJrNd0aG3NxVPB&X-Amz-Signature=2b945bfeb76a9f8d69d75073a1dc37f95dbc6c99465e7178914bc9a41fb59a7c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
           "caption": ""
         },
         {
@@ -198,6 +198,12 @@
         },
         {
           "type": "divider"
+        },
+        {
+          "type": "callout",
+          "icon": "⚠️",
+          "text": "<strong>Untitled</strong>: Database not accessible. Please add the Notion integration to this database.",
+          "color": "#FFF9C4"
         },
         {
           "type": "divider"
