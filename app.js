@@ -84,29 +84,23 @@ function formatDate(dateStr) {
 
 function renderGallery(block) {
       if (!block.cards || !block.cards.length) return '';
+      // Store cards globally so onclick handlers can reference them
+      window._galleryCards = block.cards;
       let html = '<div class="notion-gallery">';
-      block.cards.forEach(card => {
-              html += '<div class="gallery-card">';
+      block.cards.forEach(function(card, idx) {
+              html += '<div class="gallery-card" role="button" tabindex="0"' +
+                      ' onclick="openModal(window._galleryCards[' + idx + '])">';
               if (card.cover) {
-                        html += '<div class="gallery-card-cover"><img src="' + card.cover + '" alt="" loading="lazy"></div>';
+                      html += '<div class="gallery-card-cover"><img src="' + card.cover + '" alt="" loading="lazy"></div>';
               } else {
-                        html += '<div class="gallery-card-cover gallery-card-cover--empty"></div>';
+                      html += '<div class="gallery-card-cover gallery-card-cover--empty"></div>';
               }
               html += '<div class="gallery-card-body">';
-              if (card.company) {
-                        html += '<p class="gallery-card-company">' + card.jobTitle + '</p>';
-              }
-              if (card.jobTitle) {
-                        html += '<p class="gallery-card-title">' + card.company + '</p>';
-              }
-              if (card.date) {
-                        html += '<p class="gallery-card-date">' + formatDate(card.date) + '</p>';
-              }
-              if (card.desc) {
-                        html += '<p class="gallery-card-desc">' + card.desc + '</p>';
-              }
-              html += '</div>';
-              html += '</div>';
+              if (card.jobTitle) html += '<p class="gallery-card-company">' + card.jobTitle + '</p>';
+              if (card.company)  html += '<p class="gallery-card-title">' + card.company + '</p>';
+              if (card.date)     html += '<p class="gallery-card-date">' + formatDate(card.date) + '</p>';
+              if (card.desc)     html += '<p class="gallery-card-desc">' + card.desc + '</p>';
+              html += '</div></div>';
       });
       html += '</div>';
       return html;
@@ -184,6 +178,50 @@ function buildPage(pages) {
       const page = pages[key] || pages.main;
       if (!page) { container.innerHTML = '<p>Page not found.</p>'; return; }
       container.innerHTML = renderBlocks(page.blocks || []);
+}
+
+
+// ── Modal ────────────────────────────────────────────────────────────────────
+
+function buildModal() {
+      if (document.getElementById('work-modal')) return;
+      const el = document.createElement('div');
+      el.id = 'work-modal';
+      el.className = 'work-modal-overlay';
+      el.innerHTML =
+              '<div class="work-modal">' +
+                      '<button class="work-modal-close" onclick="closeModal()" aria-label="Close">&times;</button>' +
+                      '<div class="work-modal-cover" id="modal-cover"></div>' +
+                      '<div class="work-modal-body">' +
+                              '<p class="work-modal-company" id="modal-company"></p>' +
+                              '<h2 class="work-modal-title" id="modal-title"></h2>' +
+                              '<p class="work-modal-date" id="modal-date"></p>' +
+                              '<div class="work-modal-content" id="modal-content"></div>' +
+                      '</div>' +
+              '</div>';
+      el.addEventListener('click', function(e) { if (e.target === el) closeModal(); });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+      document.body.appendChild(el);
+}
+
+function openModal(card) {
+      buildModal();
+      const modal = document.getElementById('work-modal');
+      document.getElementById('modal-company').innerHTML = card.jobTitle || '';
+      document.getElementById('modal-title').innerHTML   = card.company  || '';
+      document.getElementById('modal-date').textContent  = card.date ? formatDate(card.date) : '';
+      document.getElementById('modal-content').innerHTML = card.body || ('<p>' + (card.desc || '') + '</p>');
+      const coverEl = document.getElementById('modal-cover');
+      coverEl.innerHTML = card.cover ? '<img src="' + card.cover + '" alt="">' : '';
+      coverEl.style.display = card.cover ? 'block' : 'none';
+      modal.classList.add('is-open');
+      document.body.classList.add('modal-open');
+}
+
+function closeModal() {
+      const modal = document.getElementById('work-modal');
+      if (modal) modal.classList.remove('is-open');
+      document.body.classList.remove('modal-open');
 }
 
 // Boot
