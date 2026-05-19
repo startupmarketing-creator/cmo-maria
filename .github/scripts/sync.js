@@ -128,6 +128,38 @@ return (prop.people || []).map(p => p.name || '').filter(Boolean);
 return [];
 }
 
+// Fetch name of a related page by its ID
+async function fetchPageTitle(pageId) {
+try {
+const page = await notion.pages.retrieve({ page_id: pageId });
+const props = page.properties || {};
+// Look for title-type property
+for (const [name, prop] of Object.entries(props)) {
+if (prop.type === 'title') {
+return prop.title.map(t => t.plain_text).join('');
+}
+}
+return '';
+} catch (e) {
+return '';
+}
+}
+
+// Extract references (people) from a relation or people property
+async function propToReferences(prop) {
+if (!prop) return [];
+if (prop.type === 'people') {
+return (prop.people || []).map(p => p.name || '').filter(Boolean);
+}
+if (prop.type === 'relation') {
+const ids = (prop.relation || []).map(r => r.id).filter(Boolean);
+if (!ids.length) return [];
+const names = await Promise.all(ids.map(id => fetchPageTitle(id)));
+return names.filter(Boolean);
+}
+return [];
+}
+
 // Convert a Notion block to a simple object for site.json
 function blockToObj(block) {
 const type = block.type;
@@ -255,6 +287,11 @@ const firstProps = rows[0].properties || {};
 const colNames = Object.keys(firstProps);
 console.log(' [database] columns:', colNames.join(', '));
 
+// Log column types for debugging
+for (const [name, prop] of Object.entries(firstProps)) {
+console.log(' [col]', name, '->', prop.type);
+}
+
 // Map property names (case-insensitive match)
 function findProp(row, ...candidates) {
 const props = row.properties || {};
@@ -317,9 +354,9 @@ const date = dateRange.start;
 const endDate = dateRange.end;
 const desc = descProp ? propToHtml(descProp) : '';
 
-// References/people who can recommend
+// References/people who can recommend (supports both people and relation types)
 const refProp = findProp(row, 'References', 'Reference', 'Referrals', 'Recommenders');
-const references = propToPeople(refProp);
+const references = await propToReferences(refProp);
 if (references.length) console.log(' [refs for', company, ']:', references.join(', '));
 
 // Fetch full page body for modal
