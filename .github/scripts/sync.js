@@ -260,7 +260,7 @@ async function databaseToGallery(obj) {
               // Find the title-type property first
                                    for (const [name, prop] of Object.entries(allProps)) {
                                              if (prop.type === 'title') {
-                                                         jobTitle = propToHtml(prop);
+                                                         company = propToHtml(prop);
                                                          break;
                                              }
                                    }
@@ -268,7 +268,7 @@ async function databaseToGallery(obj) {
                                    // Use the Position column that is NOT the title
                                    for (const [name, prop] of Object.entries(allProps)) {
                                              if ((name === 'Position' || name === 'Position ') && prop.type !== 'title') {
-                                                         company = propToHtml(prop);
+                                                         jobTitle = propToHtml(prop);
                                                          break;
                                              }
                                    }
