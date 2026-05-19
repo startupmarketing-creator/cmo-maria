@@ -5,155 +5,238 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
 // Database IDs (used to discover their data sources)
 const SETTINGS_DB = '357ca93d844180c3a965db01e49db981';
-const NAV_DB      = '357ca93d84418097a8a5d51b59771f55';
-const PAGE_MAIN   = '357ca93d84418080b90ec9d1bb0a596f';
-const PAGE_ABOUT  = '357ca93d84418082ae87dc96bb3d7dd5';
+const NAV_DB     = '357ca93d84418097a8a5d51b59771f55';
+const PAGE_MAIN  = '357ca93d84418080b90ec9d1bb0a596f';
+const PAGE_ABOUT = '357ca93d84418082ae87dc96bb3d7dd5';
 
 // Resolve a database to its first data source ID.
 // Notion 2025-09-03 API: databases now contain one or more data sources.
 async function getDataSourceId(databaseId) {
-  const db = await notion.databases.retrieve({ database_id: databaseId });
-  if (!db.data_sources || db.data_sources.length === 0) {
-    throw new Error('No data sources found for database ' + databaseId);
-  }
-  return db.data_sources[0].id;
+    const db = await notion.databases.retrieve({ database_id: databaseId });
+    if (!db.data_sources || db.data_sources.length === 0) {
+          throw new Error('No data sources found for database ' + databaseId);
+    }
+    return db.data_sources[0].id;
 }
 
 // Extract plain text from a property (title or rich_text)
 function getText(prop) {
-  if (!prop) return '';
-  if (prop.type === 'title') return prop.title.map(t => t.plain_text).join('');
-  if (prop.type === 'rich_text') return prop.rich_text.map(t => t.plain_text).join('');
-  return '';
+    if (!prop) return '';
+    if (prop.type === 'title') return prop.title.map(t => t.plain_text).join('');
+    if (prop.type === 'rich_text') return prop.rich_text.map(t => t.plain_text).join('');
+    return '';
 }
 
 // Convert Notion rich_text array to HTML string with formatting
 function richTextToHtml(richText) {
-  if (!richText) return '';
-  return richText.map(t => {
-    let s = t.plain_text
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
-    const a = t.annotations || {};
-    if (a.bold) s = '<strong>' + s + '</strong>';
-    if (a.italic) s = '<em>' + s + '</em>';
-    if (a.code) s = '<code>' + s + '</code>';
-    if (a.color && a.color !== 'default') {
-      const color = a.color.replace('_background', '');
-      const cssColor = color === 'blue' ? 'var(--accent-color)' : color;
-      const isBg = a.color.endsWith('_background');
-      s = isBg
-        ? '<span style="background:' + cssColor + '">' + s + '</span>'
-        : '<span style="color:' + cssColor + '">' + s + '</span>';
-    }
-    if (t.href) s = '<a href="' + t.href + '">' + s + '</a>';
-    return s;
-  }).join('');
+    if (!richText) return '';
+    return richText.map(t => {
+          let s = t.plain_text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+          const a = t.annotations || {};
+          if (a.bold)   s = '<strong>' + s + '</strong>';
+          if (a.italic) s = '<em>' + s + '</em>';
+          if (a.code)   s = '<code>' + s + '</code>';
+          if (a.color && a.color !== 'default') {
+                  const color = a.color.replace('_background', '');
+                  const cssColor = color === 'blue' ? 'var(--accent-color)' : color;
+                  const isBg = a.color.endsWith('_background');
+                  s = isBg
+                    ? '<span style="background:' + cssColor + '">' + s + '</span>'
+                            : '<span style="color:' + cssColor + '">' + s + '</span>';
+          }
+          if (t.href) s = '<a href="' + t.href + '">' + s + '</a>';
+          return s;
+    }).join('');
+}
+
+// Resolve callout background color from Notion color name
+function calloutBgColor(color) {
+    const map = {
+          gray_background:   '#F1F1EF',
+          brown_background:  '#F4EEEE',
+          orange_background: '#FFF0E6',
+          yellow_background: '#FFF9C4',
+          green_background:  '#EAFAF1',
+          blue_background:   '#EDE4D8',
+          purple_background: '#F6F3F9',
+          pink_background:   '#FFF0F6',
+          red_background:    '#FEE2E2',
+      default:           'var(--bg-tertiary)',
+    };
+    return map[color] || map.default;
 }
 
 // Convert a Notion block to a simple object for site.json
 function blockToObj(block) {
-  const type = block.type;
-  const content = block[type];
-  if (!content) return null;
-  const text = richTextToHtml(content.rich_text || []);
+    const type = block.type;
+    const content = block[type];
+    if (!content) return null;
+    const text = richTextToHtml(content.rich_text || []);
+
   switch (type) {
     case 'heading_1': return { type: 'heading_1', text };
     case 'heading_2': return { type: 'heading_2', text };
     case 'heading_3': return { type: 'heading_3', text };
     case 'paragraph': return text ? { type: 'paragraph', text } : null;
-    case 'quote': return { type: 'quote', text };
-    case 'divider': return { type: 'divider' };
-    case 'bulleted_list_item': return { type: 'bulleted_list_item', text };
-    case 'numbered_list_item': return { type: 'numbered_list_item', text };
+    case 'quote':     return { type: 'quote', text };
+    case 'divider':   return { type: 'divider' };
+    case 'bulleted_list_item':  return { type: 'bulleted_list_item', text };
+    case 'numbered_list_item':  return { type: 'numbered_list_item', text };
+
+    case 'callout': {
+            const icon = content.icon
+              ? (content.icon.type === 'emoji' ? content.icon.emoji : '')
+                      : '';
+            const bg = calloutBgColor(content.color || 'default');
+            return { type: 'callout', icon, text, color: bg };
+    }
+
+    case 'image': {
+            const url = content.type === 'external'
+              ? content.external.url
+                      : content.file.url;
+            const caption = richTextToHtml(content.caption || []);
+            return { type: 'image', url, caption };
+    }
+
+    case 'table': {
+            return {
+                      type: 'table',
+                      has_header: content.has_column_header || false,
+                      rows: [],           // filled in fetchBlocks after children are fetched
+                      _id: block.id,      // temporary: used to load children
+                      _has_children: block.has_children,
+            };
+    }
+
+    case 'table_row': {
+            const cells = (content.cells || []).map(cell => richTextToHtml(cell));
+            return { type: 'table_row', cells };
+    }
+
+    case 'embed':
+    case 'video':
+    case 'pdf': {
+            const url = content.external ? content.external.url
+                              : content.file    ? content.file.url
+                              : '';
+            if (!url) return null;
+            return { type: 'embed', url };
+    }
+
     default: return null;
   }
 }
 
-// Fetch all child blocks of a page (handles pagination)
+// Fetch all child blocks of a page/block (handles pagination)
+// For table blocks, also fetches their rows and attaches them.
 async function fetchBlocks(pageId) {
-  const blocks = [];
-  let cursor;
-  do {
-    const res = await notion.blocks.children.list({ block_id: pageId, start_cursor: cursor });
-    blocks.push(...res.results);
-    cursor = res.has_more ? res.next_cursor : undefined;
-  } while (cursor);
-  return blocks;
+    const blocks = [];
+    let cursor;
+    do {
+          const res = await notion.blocks.children.list({ block_id: pageId, start_cursor: cursor });
+          blocks.push(...res.results);
+          cursor = res.has_more ? res.next_cursor : undefined;
+    } while (cursor);
+    return blocks;
 }
 
 // Fetch all rows from a data source (handles pagination, new 2025-09-03 API)
 async function fetchDataSource(dataSourceId) {
-  const rows = [];
-  let cursor;
-  do {
-    const res = await notion.dataSources.query({
-      data_source_id: dataSourceId,
-      start_cursor: cursor
-    });
-    rows.push(...res.results);
-    cursor = res.has_more ? res.next_cursor : undefined;
-  } while (cursor);
-  return rows;
+    const rows = [];
+    let cursor;
+    do {
+          const res = await notion.dataSources.query({
+                  data_source_id: dataSourceId,
+                  start_cursor: cursor
+          });
+          rows.push(...res.results);
+          cursor = res.has_more ? res.next_cursor : undefined;
+    } while (cursor);
+    return rows;
 }
 
 async function buildSettings() {
-  const dsId = await getDataSourceId(SETTINGS_DB);
-  const rows = await fetchDataSource(dsId);
-  const settings = {};
-  for (const row of rows) {
-    const key = getText(row.properties.Key);
-    const value = getText(row.properties.Value);
-    if (key) settings[key] = value;
-  }
-  return settings;
+    const dsId = await getDataSourceId(SETTINGS_DB);
+    const rows = await fetchDataSource(dsId);
+    const settings = {};
+    for (const row of rows) {
+          const key   = getText(row.properties.Key);
+          const value = getText(row.properties.Value);
+          if (key) settings[key] = value;
+    }
+    return settings;
 }
 
 async function buildNavigation() {
-  const dsId = await getDataSourceId(NAV_DB);
-  const rows = await fetchDataSource(dsId);
-  const items = rows.map(row => {
-    const p = row.properties;
-    return {
-      id: getText(p.ID),
-      label: getText(p.Label),
-      url: getText(p.URL),
-      order: p.Order && p.Order.number != null ? p.Order.number : 999,
-      visible: p.Visible && p.Visible.checkbox === true,
-      type: p.Type && p.Type.select ? p.Type.select.name : 'page'
-    };
-  });
-  items.sort((a, b) => a.order - b.order);
-  return items;
+    const dsId = await getDataSourceId(NAV_DB);
+    const rows = await fetchDataSource(dsId);
+    const items = rows.map(row => {
+          const p = row.properties;
+          return {
+                  id:      getText(p.ID),
+                  label:   getText(p.Label),
+                  url:     getText(p.URL),
+                  order:   p.Order && p.Order.number != null ? p.Order.number : 999,
+                  visible: p.Visible && p.Visible.checkbox === true,
+                  type:    p.Type && p.Type.select ? p.Type.select.name : 'page'
+          };
+    });
+    items.sort((a, b) => a.order - b.order);
+    return items;
 }
 
 async function buildPage(pageId) {
-  const blocks = await fetchBlocks(pageId);
-  const out = blocks.map(blockToObj).filter(Boolean);
+    const rawBlocks = await fetchBlocks(pageId);
+    const out = [];
+
+  for (const block of rawBlocks) {
+        const obj = blockToObj(block);
+        if (!obj) continue;
+
+      // For table blocks: fetch child rows and attach them
+      if (obj.type === 'table' && obj._has_children) {
+              const childBlocks = await fetchBlocks(obj._id);
+              obj.rows = childBlocks
+                .map(b => blockToObj(b))
+                .filter(b => b && b.type === 'table_row')
+                .map(b => b.cells);
+              delete obj._id;
+              delete obj._has_children;
+      } else {
+              delete obj._id;
+              delete obj._has_children;
+      }
+
+      out.push(obj);
+  }
+
   return { blocks: out };
 }
 
 async function main() {
-  console.log('Reading settings...');
-  const settings = await buildSettings();
-  console.log('  ' + Object.keys(settings).length + ' settings keys');
+    console.log('Reading settings...');
+    const settings   = await buildSettings();
+    console.log('  ' + Object.keys(settings).length + ' settings keys');
 
   console.log('Reading navigation...');
-  const navigation = await buildNavigation();
-  console.log('  ' + navigation.length + ' nav items');
+    const navigation = await buildNavigation();
+    console.log('  ' + navigation.length + ' nav items');
 
   console.log('Reading Main page...');
-  const main = await buildPage(PAGE_MAIN);
-  console.log('  ' + main.blocks.length + ' blocks');
+    const main = await buildPage(PAGE_MAIN);
+    console.log('  ' + main.blocks.length + ' blocks');
 
   console.log('Reading About page...');
-  const about = await buildPage(PAGE_ABOUT);
-  console.log('  ' + about.blocks.length + ' blocks');
+    const about = await buildPage(PAGE_ABOUT);
+    console.log('  ' + about.blocks.length + ' blocks');
 
   const site = { settings, navigation, pages: { main, about } };
-  fs.writeFileSync('site.json', JSON.stringify(site, null, 2));
-  console.log('Wrote site.json');
+    fs.writeFileSync('site.json', JSON.stringify(site, null, 2));
+    console.log('Wrote site.json');
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
